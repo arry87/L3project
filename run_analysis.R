@@ -45,3 +45,4 @@ df3 <- as.data.frame(act)
 names(df3) <- "Activity"
 
 DATA.NEAT <- cbind(df3, df2, df1)
+write.table(DATA.NEAT, file = "tidydata.txt", row.names = FALSE)
